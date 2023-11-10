@@ -1,16 +1,16 @@
 
 .corner{
     width: 100%;
-    height: 90vh;
+    height: auto;
   
     background:
-      linear-gradient(to right, blueviolet 1.5vw, transparent 1.5vw) 0 0,
-      linear-gradient(to left, blueviolet 1.5vw, transparent 1.5vw) 100% 100%,
-      linear-gradient(to bottom, blueviolet 1.5vw, transparent 1.5vw) 0 0,
-      linear-gradient(to top, blueviolet 1.5vw, transparent 1.5vw) 100% 100%;
+      linear-gradient(to right, blueviolet 1em, transparent 1em) 0 0,
+      linear-gradient(to left, blueviolet 1em, transparent 1em) 100% 100%,
+      linear-gradient(to bottom, blueviolet 1em, transparent 1em) 0 0,
+      linear-gradient(to top, blueviolet 1em, transparent 1em) 100% 100%;
   
     background-repeat: no-repeat;
-    background-size: 15vw 15vw;
+    background-size: 8em 8em;
 }
 *{
     color: white
@@ -21,18 +21,33 @@ a{
 }
 h1{
     font-family: "Urbanist";
-    font-size: 6vw!important;
+    font-size: 3rem!important;
 }
 .startBorder{
     border-left: .5vw solid blueviolet;
 }
-.mainText, .subtext{
-    margin-left: 3rem;
-}
+
 .subtext > *{
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 .icons{
     background-color: blueviolet;
     color: white;
+}
+@media (max-width: 575.98px) {
+    .mainTextBig h1{
+        text-align: center;
+    }
+    .mainText h3{
+        text-align: center;
+    }
+    .subtext .startBorder{
+        border-left: none;
+        text-decoration: underline blueviolet solid;
+        padding-left: 0!important;
+    }
+    .subtext p,.subtext a{
+        text-align: center;
+
+    }
 }
